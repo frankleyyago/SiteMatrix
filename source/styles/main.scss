@@ -1,0 +1,141 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'cast';
+@use 'pills';
+@use 'faq';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Chivo Mono', monospace;
+    list-style: none;
+}
+
+body {
+    background-color: variables.$bgColor;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variables.$secTextColor;
+    font-family: matrix, sans-serif;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$mainTextColor;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.link-text {
+    @include text(18px);
+    color: variables.$secTextColor;
+    text-decoration: underline
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    width: 100%;
+    height: 60px;
+    background-color: variables.$buttonColor;
+    font-size: 18px;
+    color: variables.$secTextColor;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid variables.$buttonColor;
+
+    &:hover {
+        background-color: lighten(variables.$buttonColor, 3%);
+    }
+
+    &--secondary {
+        background-color: variables.$secButtonColor;
+        border-color: variables.$secButtonColor;
+
+        &:hover {
+            background-color: lighten(variables.$secButtonColor, 3%);
+        }
+    }
+
+    &--dark {
+        background-color: rgba(variables.$darkButtonColor, 0.8);
+        border-color: variables.$secTextColor;
+
+        &:hover {
+            background-color: variables.$secTextColor;
+            color: variables.$bgColor;
+        }
+    }
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text_container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+        
+        img {
+            width: 100%;
+        }
+
+        &__text_container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+        }
+    }
+}

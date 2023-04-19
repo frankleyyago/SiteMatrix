@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/warner.png" alt="Warner">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secondary" href="#">Movies</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Join</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./dist/images/warner.png" alt="Warner Bros">
+            </h1>
+            <h3 class="title--big">
+                The Matrix
+            </h3>
+            <p>
+                <h class="text--big">All I'm offering is the truth</h4>
+                <br>
+            </p>
+            <ul class="hero__content__watch">
+                <li class="hero__content__watch__movie">
+                    <button class="button">Watch Trailer</button>
+                </li>
+                <li class="hero__content__watch__movie">
+                    <button class="button">Watch Movie</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cast">
+        <nav class="cast__tabs">
+            <button data-tab-button="character" class="cast__tabs__button cast__tabs__button--is-active">
+                Characters
+            </button>
+            <button data-tab-button="cast" class="cast__tabs__button">
+                Cast
+            </button>
+            <button data-tab-button="producers" class="cast__tabs__button">
+                Producers
+            </button>
+        </nav>
+        <ul data-tab-id="character" class="cast__list cast__list--is-active">
+            <li class="cast__list__character">
+                <img src="./dist/images/character/neo.jpeg" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/character/morpheus.jpeg" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/character/trinity.jpeg" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/character/cypher.jpeg" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/character/oracle.jpeg" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/character/smith.jpeg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="cast" class="cast__list">
+            <li class="cast__list__character">
+                <img src="./dist/images/cast/keanu.png" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/cast/laurence.png" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/cast/carrie.png" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/cast/joe.png" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/cast/gloria.png" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="./dist/images/cast/hugo.png" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="producers" class="cast__list">
+            <li class="cast__list__character">
+                <img src="https://via.placeholder.com/630x378" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="https://via.placeholder.com/630x378" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="https://via.placeholder.com/630x378" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="https://via.placeholder.com/630x378" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="https://via.placeholder.com/630x378" alt="">
+            </li>
+            <li class="cast__list__character">
+                <img src="https://via.placeholder.com/630x378" alt="">
+            </li>
+        </ul>
+    </section>
+
+    <section class="pills">
+        <h2 class="title--big">Choose your pill</h2>
+        <ul class="pills__list">
+            <li class="pills__list__pill">
+                <strong class="title--small">Red pill</strong>
+                <img src="./dist/images/red-pill.png" alt="blue pill">
+                <p class="text--big">
+                    If you choose the red pill, you will have access to the true nature of the world and discover that everything you believe to be reality is, in fact, an illusion created by the Matrix. You will discover that you live in a world controlled by machines, and that your life and experiences have been fabricated and manipulated since the moment you were born. However, choosing the red pill means you will have to leave everything you know behind and face a reality that may be very different from what you are used to. You will need to fight against the machines and be part of the human resistances.
+                </p>
+                <button class="button">Take red pill</button>
+            </li>
+            <li class="pills__list__pill">
+                <strong class="title--small">Blue pill</strong>
+                <img src="./dist/images/blue-pill.png" alt="blue pill">
+                <p class="text--big">
+                    If you choose the blue pill, you will continue to believe in the illusion you currently live in, and you won't have to get involved in conflicts and dangerous battles. You can continue your life as before, without the pressure of significant changes. However, it's important to remember that choosing the blue pill means you will be ignoring the true nature of the world and the possibility of evolving and developing as a person. If you choose the blue pill, you may miss the chance to understand reality and develop skills that may be essential to survive in a world controlled by machines.
+                </p>
+                <button class="button">Take blue pill</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.
+        </p>
+    </section>
+
+    <section class="image-text-section image-text-section--image-full-width">
+        <img src="./dist/images/synopsis.jpg" alt="Neo">
+        <div class="image-text-section image-text-section--image-full-width__text_container">
+            <h2 class="title">Synopsis</h2>
+            <p class="text--big">
+                In "The Matrix" of 1999, Thomas Anderson is a computer programmer who leads a double life as the hacker Neo. He is contacted by Trinity, a mysterious rebel who introduces him to the enigmatic Morpheus. Morpheus reveals to Neo that the reality he knows is an illusion created by artificial intelligence, and that he is the chosen one to lead the fight against the machines and free humanity from the Matrix. Neo joins the rebels and embarks on an epic journey of action, suspense, and philosophy, while facing his own fears and discovering the true nature of his existence.
+            </p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Resposta da pergunta
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/warner.png" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/globe.svg" alt="Globo Mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Sobre o Warner</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2023 The Matrix and The Warner Bros Company. All rights reserved. Paid subscription service. Content is subject to availability.
+            </p>
+            <p class="text--small">
+                Warner Bros is a paid service, based on subscription and subject to terms and conditions. The Warner Bros+ service is marketed by The Warner Bros Company (Brazil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.325, 12.544, 12.789, Piso 15, São Paulo / SP - CEP 12345-998, Brazil and CNPJ / M 12.345.678 / 0004-20
+            </p>
+        </div>
+    </footer>
+
+    <script src="./source/main.js"></script>
+</body>
+</html>
