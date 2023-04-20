@@ -30,6 +30,11 @@
         display: flex;
         justify-content: center;
 
+        @media (max-width: 768px) {
+            justify-content: space-between;
+            margin: 0px 16px;
+        }
+
         &__button {
             color: variables.$secTextColor;
             font-size: 20px;
@@ -43,6 +48,10 @@
 
             &--is-active {                
                 border-color: variables.$secTextColor;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }

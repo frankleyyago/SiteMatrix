@@ -26,6 +26,7 @@
             </ul>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -149,7 +150,10 @@
     </section>
 
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/synopsis.jpg" alt="Neo">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/synopsis-mobile.jpg"/>
+            <img src="./dist/images/synopsis.jpg" alt="Trinity">
+        </picture>
         <div class="image-text-section image-text-section--image-full-width__text_container">
             <h2 class="title">Synopsis</h2>
             <p class="text--big">
@@ -159,30 +163,30 @@
     </section>
 
     <section class="faq">
-        <h2 class="title">Perguntas frequentes</h2>
+        <h2 class="title">Frequently Asked Questions</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta
+                    What is The Matrix?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta da pergunta
+                    Answer
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta
+                    Am I ready to wake up?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta da pergunta
+                    Answer
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta
+                    Can I take the red and blue pill together?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Resposta da pergunta
+                    Answer
                 </div>
             </li>
         </ul>

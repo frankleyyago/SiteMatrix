@@ -6,6 +6,15 @@
     background-image: url(../images/hero_desktop.jpg);
     text-align: center;
     background-size: cover;
+    margin-top: -100px;
+    
+
+    @media (max-width: 768px) {
+        background-image: url(../images/hero_celular.jpeg);
+        padding-top: calc(50vw + 25px);
+        background-repeat: no-repeat;
+        margin-top: -70px;
+    }
 
     .button {
         margin-top: 2vw;
@@ -18,6 +27,12 @@
         &__branding {
             max-width: 320px;
             margin: 0 auto 0;
+
+            @media (max-width: 768px) {
+                img  {
+                    max-width: 180px;
+                }
+            }
         }
 
         .title--small {
@@ -34,9 +49,18 @@
             justify-content: space-between;
             list-style: none;
 
+            @media (max-width:768px) {
+                display: block;
+            }
+
             &__movie {
                 width: calc(50% - 12px);
                 align-items: center;
+
+                @media (max-width:768px) {
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
             }
         }
     }
